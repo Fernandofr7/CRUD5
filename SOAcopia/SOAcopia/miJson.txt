@@ -1,0 +1,7 @@
+{
+    "nombre":"Alex",
+    "apellido":"Lizano",
+    "edad":20,
+    "estudios": [{"primaria": "Celiano Monge",
+        "secundaria": "Teresa Flor"}]
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+ <script type ="text/javascript">
+    // //String
+    // var cadena = "Hola";
+    // console.log(cadena);
+    // //Numeros
+    // var numero = 10;
+    // console.log(numero);
+    // //Array
+    // var arraySimple=["lunes", "martes", "miercoles"];
+    // console.log(arraySimple[1]);
+    // //Object - JSON
+    // var objeto ={"nombre":"carlos", "apellido":"nuñez"};
+    // console.log(objeto.nombre);
+    // //Boolean -
+    // var boolean = null;
+    // console.log(boolean);
+
+    // //JSON Anidado
+    // var json={"nombre": "Alex", 
+    //             "apellido": "Lizano", 
+    //             "edad": 20,
+    //             "casado": false,
+    //             "estudios":[{"primaria": "Celiano Monge",
+    //                         "secundaria": "Teresa Flor",
+    //                         "superior":"UTA"}]
+    //         };
+    // console.log(json.casado);
+    // //Acceder a un array dentro de un json:
+    // console.log(json.estudios[0].primaria);
+    // //Acceder a un json dentro de otro => console.log(json.estudios[0].primaria);
+
+    //JSON.Parse => convertir un String JSON a un objeto JavaScript
+
+    var cadena1 ='{"nombre": "Alex", "apellido": "Lizano"}';
+    console.log(cadena1);
+    var json = JSON.parse(cadena1);
+    console.log(json);
+    console.log(json.nombre);
+
+    //JSON STRINGFY => convertir un objeto JavaScript a un JSON string
+
+    var object = {"nombre": "Alex", "apellido": "Lizano"};
+    console.log(object);
+    var texto = JSON.stringify(object);
+    console.log(texto);
+    console.log(typeof(texto));
+
+    //JSON STRINGFY => Convertir Array JavaScript a un JSON string
+
+    var array = ["lunes", "martes", "miercoles"];
+    console.log(array);
+    var json1 =JSON.stringify(array);
+    console.log(json1);
+ </script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transacciones</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var xhttp = new XMLHttpRequest;
+    xhttp.open("GET", "miJson.txt");
+    xhttp.send();
+    xhttp.onreadystatechange = function(){
+        if(xhttp.readyState ==4 && xhttp.status==200){
+        // console.log(xhttp.readyState);
+        //             //(Como quiero envíar o leer, Ruta de Json)
+        // xhttp.open("GET", "miJson.txt");
+        // xhttp.send();
+        // console.log(xhttp.readyState);
+            console.log("valor de la propiedad Status: "+this.status);
+            console.log("valor de la propiedad Ready: "+this.readyState);
+            console.log(xhttp.responseText);
+            var object = JSON.parse(xhttp.responseText);
+            console.log(object);
+            console.log(object.nombre);
+            console.log(object.estudios[0].primaria);
+        }
+    };
+</script>
+</html>
